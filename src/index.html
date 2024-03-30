@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Таблиці зі студентами</h1>
+    <div class="global-container">
+        <div class="container" id="container">
+            <p class="a" style="margin: 0px;">Ім'я:</p><input type="text" id="name"><br>
+            <p class="a" style="margin: 0px;">Прізвище:</p><input type="text" id="surname"><br>
+            <p class="a" style="margin: 0px;">Вік:</p><input type="number" id="age" min="1"><br>
+            <p class="a" style="margin: 0px;">Курс:</p><input type="number" id="studyCurse"  min="1" max="5"><br>
+            <h4>Курси на які ви записані:</h4>
+            <ul class="list">
+                <button type="button" id="btnMathAdd">Записатись</button><label>Math</label></li><br>
+                <button type="button" id="btnEnglishAdd">Записатись</button><label>English</label></li><br>
+                <button type="button" id="btnHistoryAdd">Записатись</button><label>History</label></li><br>
+                <button type="button" id="btnScienceAdd">Записатись</button><label>Science</label></li><br>
+            </ul>
+            <button id="btn">Додати учня в систему</button>
+        </div>
+        <table id="table">
+            <tr>
+                <th>Ім'я</th>
+                <th>Прізвище</th>
+                <th>Вік</th>
+                <th>Курс</th>
+                <th>Курси</th>
+                <th>Номер</th>
+            </tr>
+        </table>
+    </div>
+    
+    <h1>Видалення студента</h1>
+    <input type="number" id="deleteNumb" min="1" placeholder="Вкажіть номер студента">
+    <button type="button" id="btnDelete">Видалити студента</button>
+
+    <h1>Редагування інформації про студента</h1>
+    <p>Введіть номер студента</p>
+    <input type="number" id="changeNumb" min="1" placeholder="Вкажіть номер студента">
+    <div class="container" id="container">
+        <p style="margin: 0px;">Ім'я:</p><input type="text" id="nameC"><br>
+        <p style="margin: 0px;">Прізвище:</p><input type="text" id="surnameC"><br>
+        <p style="margin: 0px;">Вік:</p><input type="number" id="ageC" min="1"><br>
+        <p style="margin: 0px;">Курс:</p><input type="number" id="studyCurseC"  min="1" max="5"><br>
+        <h4>Курси на які ви записані:</h4>
+        <ul class="list">
+            <button type="button" id="btnMathAddC">Записатись</button><label>Math</label></li><br>
+            <button type="button" id="btnEnglishAddC">Записатись</button><label>English</label></li><br>
+            <button type="button" id="btnHistoryAddC">Записатись</button><label>History</label></li><br>
+            <button type="button" id="btnScienceAddC">Записатись</button><label>Science</label></li><br>
+        </ul>
+    </div>
+    <button id="btnChange">Змінити інформацію про студента</button>
+
+
+
+    <script type="" src="main.js"></script>
+</body>
+</html>
