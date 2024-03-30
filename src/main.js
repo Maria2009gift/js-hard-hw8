@@ -1,5 +1,5 @@
 
-import students from "./students.json"
+import students from "./students.json" assert { type: "json" };
 
 const inputsInfo = {
     name: document.querySelector("#name"),
