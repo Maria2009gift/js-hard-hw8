@@ -1,5 +1,5 @@
 
-import students from "./students.json" with { type: "json" };
+import students from "./students.json" with { type: "module" };
 
 const inputsInfo = {
     name: document.querySelector("#name"),
